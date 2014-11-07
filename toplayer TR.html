@@ -1,0 +1,27 @@
+<!--Turkey Popup-->
+    <script>
+    $ = jQuery;
+    $(function(){
+            if ($.cookie('newsletterTurkey') === undefined) {       
+                $.cookie('newsletterTurkey', 'on', { expires: 365, path: '/' });
+                $('#newsletterTurkey').modal('show');
+            }
+        });
+
+    </script>
+    <div id="newsletterTurkey" class="vote modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h3 id="myModalLabel"><img src="http://culture.pl/sites/all/themes/culture/logo.png" alt="Culture"></h3>
+      </div>
+      <div class="modal-body">
+        <div id="infBox">
+            <h2>Merhaba! <br />
+                Are you from Turkey? <br />
+                Our page has a Turkish version, <br />
+                where you can read all of our content in Turkish.</h2>
+            <div class="text-center"> <a href="http://turkiye.culture.pl/tr" class="culture-button button-turkey">turkiye.culture.pl  <span class="button-arrow"></span></a></div>
+        </div>
+      </div>
+      <a href="http://turkiye.culture.pl/tr" class="kultura-image"> <img src="/sites/all/themes/culture/img/turkiye-popup.jpg" alt="Kultura w Sieci"></a>
+    </div>
